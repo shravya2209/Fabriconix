@@ -1,0 +1,43 @@
+# =============================================================================
+# Fabriconix — Dependency Manifest
+# =============================================================================
+# This is a pip-style listing of all npm packages used by the project.
+# It is provided for documentation purposes only — use `npm install` to
+# install these packages, NOT pip.
+#
+# Install:  cd backend && npm install
+# =============================================================================
+
+# ── Backend (Production) ─────────────────────────────────────────────────────
+
+# Web Framework
+express==5.2.1                  # HTTP server & routing
+cors==2.8.5                     # Cross-Origin Resource Sharing middleware
+
+# Authentication & Security
+bcryptjs==3.0.3                 # Password hashing (bcrypt, pure JS)
+jsonwebtoken==9.0.3             # JWT token generation & verification
+
+# Database
+sqlite3==5.1.7                  # SQLite3 bindings for Node.js
+
+# Real-Time Communication
+socket.io==4.8.3                # WebSocket-based bidirectional event engine
+
+# File Handling
+multer==2.0.2                   # Multipart form-data / file upload middleware
+
+# Configuration
+dotenv==17.2.3                  # Load environment variables from .env files
+
+# ── Backend (Development) ────────────────────────────────────────────────────
+
+nodemon==3.1.11                 # Auto-restart server on file changes
+
+# ── Frontend ─────────────────────────────────────────────────────────────────
+# The frontend uses vanilla HTML5, CSS3, and JavaScript with no npm packages.
+# Socket.io client is loaded via the backend's auto-served client script.
+
+# ── Runtime ──────────────────────────────────────────────────────────────────
+# Node.js >= 14.x
+# npm >= 6.x
